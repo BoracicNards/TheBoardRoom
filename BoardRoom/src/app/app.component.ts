@@ -8,9 +8,10 @@ import { BoardComponent } from './board/board.component';
 })
 export class AppComponent {
   title = 'The BoardRoom';
-  public static Route = {
+  /*public static Route = {
     path: 'board',
     title: 'The Board',
     component: BoardComponent
   };
+  */
 }

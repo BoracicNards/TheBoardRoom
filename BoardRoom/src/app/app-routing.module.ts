@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { BoardComponent } from './board/board.component';
 import { FriendsComponent } from './friends/friends.component';
 import { MessagesComponent } from './messages/messages.component';
+import { NewPostFormComponent } from './new-post-form/new-post-form.component';
 
 const routes: Routes = [
   { path: '', component: BoardComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'socratic', component: CircleComponent},
   { path: 'friends', component: FriendsComponent },
   {path: 'messages', component: MessagesComponent}
+  //{path: 'createpost', component: NewPostFormComponent}
 ];
 
 @NgModule({

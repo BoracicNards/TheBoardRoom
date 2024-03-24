@@ -1,11 +1,18 @@
 <div class="sidebar">
-  <img src ="assets/mainLogo.svg" width = "200" height = "100">
-  <img src="assets/board.svg" width="50" height="50"><a routerLink="/">Board</a>
-  <img src="assets/circle.svg" width="50" height="50"><a routerLink="/socratic">Socratic Circle</a>
-  <img src="assets/friends.svg" width="50" height="50"><a routerLink="/friends">Friends</a>
-  <img src="assets/inbox.svg" width="50" height="50"><a routerLink="/messages">Messages</a>
-  <img src="assets/newPost.svg" width="40" height="40"><a routerLink="/messages">Post</a>
-
+  <img src="assets/mainLogo.svg" width="200" height="100">
+  <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+    <img src="assets/board.svg" width="50" height="50">Board
+  </a>
+  <a routerLink="/socratic" routerLinkActive="active-link">
+    <img src="assets/circle.svg" width="50" height="50">Socratic Circle
+  </a>
+  <a routerLink="/friends" routerLinkActive="active-link">
+    <img src="assets/friends.svg" width="50" height="50">Friends
+  </a>
+  <a routerLink="/messages" routerLinkActive="active-link">
+    <img src="assets/inbox.svg" width="50" height="50">Messages
+  </a>  
+  <img src="assets/newPost.svg" width="50" height="50" (click)="openFormDialog()">
 </div>
 
   

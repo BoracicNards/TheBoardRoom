@@ -9,6 +9,9 @@ import { CircleComponent } from './circle/circle.component';
 import { BoardComponent } from './board/board.component';
 import { FriendsComponent } from './friends/friends.component';
 import { MessagesComponent } from './messages/messages.component';
+import { NewPostFormComponent } from './new-post-form/new-post-form.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -20,13 +23,17 @@ import { MessagesComponent } from './messages/messages.component';
     CircleComponent,
     BoardComponent,
     FriendsComponent,
-    MessagesComponent
+    MessagesComponent,
+    NewPostFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync('noop')
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

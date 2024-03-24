@@ -5,7 +5,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #464343;
     overflow-x: hidden;
     padding-top: 20px;
   }
@@ -21,7 +21,7 @@
 
 
 .sidebar img, .sidebar svg {
-    margin-right: 20px; /* Adjust spacing as needed */
+    margin-right: 10px; /* Adjust spacing as needed */
   }
 
   .sidebar a:hover {
@@ -31,4 +31,12 @@
   h1 {
     color: #f1f1f1
   }
+
+  .active-link {
+    font-weight: bold;
+    color: #c81717; /* Example: Google Blue for the active link color */
+    background-color: #d94b4b; /* Light blue background */
+    border-left: 4px solid #de1313; /* A solid left border for emphasis */
+  }
+  
   

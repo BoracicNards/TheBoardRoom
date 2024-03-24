@@ -1,1 +1,5 @@
-<p>board works!</p>
+<div *ngFor="let post of feed">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.desc }}</p>
+    <p>{{post.tags}}</p>
+</div>
