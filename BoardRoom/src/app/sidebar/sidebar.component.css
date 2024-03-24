@@ -15,10 +15,20 @@
     text-decoration: none;
     font-size: 18px;
     color: white;
-    display: block;
+    display: flex;
+    align-items: center;
+  } 
+
+
+.sidebar img, .sidebar svg {
+    margin-right: 20px; /* Adjust spacing as needed */
   }
-  
+
   .sidebar a:hover {
     color: #f1f1f1;
+  }
+
+  h1 {
+    color: #f1f1f1
   }
   
