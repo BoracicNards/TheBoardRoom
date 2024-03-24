@@ -12,6 +12,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { NewPostFormComponent } from './new-post-form/new-post-form.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -24,7 +26,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     BoardComponent,
     FriendsComponent,
     MessagesComponent,
-    NewPostFormComponent
+    NewPostFormComponent,
+    HeaderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule
   ],
   providers: [
-    provideAnimationsAsync('noop')
+    provideAnimationsAsync('noop'),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

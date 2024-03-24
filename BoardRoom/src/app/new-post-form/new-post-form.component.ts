@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PostService } from '../post.service';
 import { Post } from '../post';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-new-post-form',
@@ -17,7 +18,8 @@ export class NewPostFormComponent {
 'Athletics', 'Fitness', 'Support']; // Predefined tags
 
   constructor(private fb: FormBuilder,
-    private postService: PostService) {
+    private postService: PostService,
+    private dialogRef: MatDialogRef<NewPostFormComponent>) {
     this.form = this.fb.group({
       title: ['', Validators.required],
       description: ['', Validators.required],
@@ -28,6 +30,7 @@ export class NewPostFormComponent {
   publishPost(post: Post){
     this.postService.publishPost(post);
     window.alert('Your post has succesfully been uploaded!')
+
   }
 
   submit() {
@@ -38,5 +41,6 @@ export class NewPostFormComponent {
     let ret = this.form.value;
     let post = new Post(ret.title, ret.description, ret.tags)
     this.publishPost(post)
+    this.dialogRef.close()
   }
 }

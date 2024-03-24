@@ -1,0 +1,53 @@
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Creates a dynamic number of columns based on available space */
+    gap: 20px; /* Space between posts */
+    padding: 20px; /* Padding around the grid */
+  }
+  
+  /* Individual post container */
+  .post-container {
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside each container */
+    background-color: #f9f9f9;
+    color:black;/* Light background for the form */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    display: flex; /* Makes the container a flex container */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: start; /* Aligns items to the start */
+    gap: 10px; /* Space between items */
+    min-height: 100px; /* Minimum height */
+    max-width: 100%; /* Ensures the container does not overflow its grid area */
+  }
+  
+  /* Define a few background colors */
+  .post-container:nth-child(1n) { background-color: #f28b82; } /* red */
+  .post-container:nth-child(2n) { background-color: #fbbc04; } /* yellow */
+  .post-container:nth-child(3n) { background-color: #fff475; } /* light yellow */
+  .post-container:nth-child(4n) { background-color: #ccff90; } /* light green */
+  .post-container:nth-child(5n) { background-color: #a7ffeb; } /* teal */
+  .post-container:nth-child(6n) { background-color: #cbf0f8; } /* light blue */
+  .post-container:nth-child(7n) { background-color: #aecbfa; } /* blue */
+  .post-container:nth-child(8n) { background-color: #d7aefb; } /* purple */
+  .post-container:nth-child(9n) { background-color: #fdcfe8; } /* pink */
+  .post-container:nth-child(10n) { background-color: #e6c9a8; } /* brown */
+  
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the space between tags */
+    margin-top: 10px; /* Space above the tag list */
+  }
+  
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0; /* Light gray background */
+    color: #333; /* Dark text for readability */
+    padding: 5px 10px; /* Padding inside the tags */
+    font-size: 14px; /* Adjust the font size as needed */
+    border-radius: 4px; /* Rounded corners for the tags */
+    white-space: nowrap; /* Prevents the tag text from wrapping */
+  }
+  

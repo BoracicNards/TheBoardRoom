@@ -1,0 +1,32 @@
+/* Styles.css or in the component's specific CSS file */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(55, 56, 56); /* Light grey background */
+  }
+  
+  .search-container {
+    flex-grow: 1;
+    margin-left: 200px; /* Adds some space between search and profile icon */
+  }
+  
+  .search-input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .profile-icon-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-icon {
+    width: 50px; /* Adjust based on your SVG size */
+    height: auto;
+    cursor: pointer;
+  }
+  

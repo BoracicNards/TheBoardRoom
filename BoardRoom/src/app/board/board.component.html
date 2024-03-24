@@ -1,5 +1,10 @@
-<div *ngFor="let post of feed">
-    <h3>{{ post.title }}</h3>
-    <p>{{ post.desc }}</p>
-    <p>{{post.tags}}</p>
-</div>
+<div class="posts-grid">
+    <div *ngFor="let post of feed" class="post-container">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.desc }}</p>
+        <div class="tags-container">
+            <span *ngFor="let tag of post.tags" class="tag">{{ tag }}</span>
+        </div>
+    </div>
+  </div>
+  

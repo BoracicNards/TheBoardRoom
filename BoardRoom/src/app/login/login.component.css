@@ -1,0 +1,51 @@
+/* Form Container */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form fields */
+    max-width: 600px; /* Maximum width of the form */
+    margin: 20px auto; /* Center the form on the page */
+    padding: 20px; /* Padding around the form content */
+    border-radius: 8px; /* Rounded corners for the form */
+    background-color: #ffffff; /* Light background for the form */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  /* Style for each form field label */
+  form label {
+    font-size: 16px; /* Label font size */
+    margin-bottom: 5px; /* Space between label and input field */
+    font-weight: 600; /* Makes labels slightly bolder */
+    color: #333; /* Dark color for text for better readability */
+  }
+  
+  /* Style for input and textarea fields */
+  form input[type="text"],
+  form textarea,
+  form select {
+    padding: 10px; /* Padding inside the input fields */
+    font-size: 16px; /* Text size inside the input fields */
+    border: 1px solid #000000; /* Border color */
+    border-radius: 4px; /* Rounded corners for the fields */
+    width: 90%; /* Full width */
+  }
+
+  /* Submit button styling */
+  form button[type="submit"] {
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #0ecb79; /* Background color */
+    color: white; /* Text color */
+    font-size: 18px; /* Text size */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer to indicate clickable */
+    transition: background-color 0.3s; /* Smooth background color change on hover */
+  }
+  
+  /* Hover effect for button */
+  form button[type="submit"]:hover {
+    background-color: #0ca883; /* Darker shade when hovered */
+  }
+  
+  
+  
